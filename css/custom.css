@@ -1,0 +1,18 @@
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }

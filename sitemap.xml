@@ -319,13 +319,6 @@
   </url>
   
   <url>
-    <loc>http://promethus-code.gitee.io/tags/ROS/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://promethus-code.gitee.io/tags/hexo/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -333,14 +326,7 @@
   </url>
   
   <url>
-    <loc>http://promethus-code.gitee.io/tags/jupyter-notebook/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promethus-code.gitee.io/tags/numpy/</loc>
+    <loc>http://promethus-code.gitee.io/tags/ROS/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -348,20 +334,6 @@
   
   <url>
     <loc>http://promethus-code.gitee.io/tags/opencv-python/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promethus-code.gitee.io/tags/python%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promethus-code.gitee.io/tags/tkinter/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -383,6 +355,34 @@
   
   <url>
     <loc>http://promethus-code.gitee.io/tags/tensorflow/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://promethus-code.gitee.io/tags/jupyter-notebook/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://promethus-code.gitee.io/tags/python%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://promethus-code.gitee.io/tags/numpy/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://promethus-code.gitee.io/tags/tkinter/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -440,7 +440,7 @@
   </url>
   
   <url>
-    <loc>http://promethus-code.gitee.io/categories/ROS/</loc>
+    <loc>http://promethus-code.gitee.io/categories/kotlin/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -454,14 +454,7 @@
   </url>
   
   <url>
-    <loc>http://promethus-code.gitee.io/categories/kotlin/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promethus-code.gitee.io/categories/python/</loc>
+    <loc>http://promethus-code.gitee.io/categories/ROS/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -475,13 +468,6 @@
   </url>
   
   <url>
-    <loc>http://promethus-code.gitee.io/categories/tkinter%E5%BA%93%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://promethus-code.gitee.io/categories/tensorflow%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -489,7 +475,14 @@
   </url>
   
   <url>
-    <loc>http://promethus-code.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
+    <loc>http://promethus-code.gitee.io/categories/python/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://promethus-code.gitee.io/categories/tkinter%E5%BA%93%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -497,6 +490,13 @@
   
   <url>
     <loc>http://promethus-code.gitee.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://promethus-code.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

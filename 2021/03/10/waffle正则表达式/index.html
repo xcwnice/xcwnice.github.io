@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>waffle常见正则表达式 | findway</title><meta name="keywords" content="中文汉化,waffle"><meta name="author" content="X-man"><meta name="copyright" content="X-man"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这里有东西被加密了，需要输入密码查看哦。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="waffle常见正则表达式">
+<meta property="og:url" content="http://promethus-code.gitee.io/2021/03/10/waffle%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
+<meta property="og:site_name" content="findway">
+<meta property="og:description" content="这里有东西被加密了，需要输入密码查看哦。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://promethus-code.gitee.io/img/xcw/find1.jpg">
+<meta property="article:published_time" content="2021-03-10T01:22:05.000Z">
+<meta property="article:modified_time" content="2021-03-10T05:28:04.991Z">
+<meta property="article:author" content="X-man">
+<meta property="article:tag" content="中文汉化">
+<meta property="article:tag" content="waffle">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://promethus-code.gitee.io/img/xcw/find1.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://promethus-code.gitee.io/2021/03/10/waffle%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: X-man","link":"链接: ","source":"来源: findway","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-10 13:28:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="findway" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/xcw/header1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/xcw/find1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">findway</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">waffle常见正则表达式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-10T01:22:05.000Z" title="发表于 2021-03-10 09:22:05">2021-03-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-10T05:28:04.991Z" title="更新于 2021-03-10 13:28:04">2021-03-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8A%A0%E5%AF%86%E7%9B%AE%E5%BD%95/">加密目录</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8A%A0%E5%AF%86%E7%9B%AE%E5%BD%95/%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96/">中文汉化</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d8cb3ffa6a6874c772c8cef6a6bf78843929c1d846c7b5ce6d6ada7ed160e70e">03936f7d4a6f4d8cf2203a535bf2a98543a5dab4cd9a7eec23bcd54949cc918bf1e1dac98fedca812fd22143d6a9bd48e2e8c71fcb537d5622a2a5abe38fe626be77ba9436cc565b83e98c7e1e3541fcf0e16739cbb1648bbb7e128e4b332e90bae5fbec91198f70d71b086536bf1962723e30f8f9f8666fe03c5620b26b1926612dc16421d4361e1463c5bd2d076220ac9f10606ed8c8104a35f747a56f84349300ac314ea9bbd149d6c08310d29f65193a396a71bc40fbd4931f34e145f7eb71886180f4e33fab1c543d427201b2728e94c7f4d36f9b83d27f01bd15d011ef74e59d630d136085798a1c9e3b293ddbe1f88c594fcb575e6b5b8925ac579295aaed8d56d5d0770be41324e169473bf951d3740409710f0e186fe059e15ee7bdaecf287d31f2d6e389c87f12a491871f0ffda2e32f412acc6218ce8276c4b5974910a3d7aa9882f7b8581d3f9775b0ac1335ae88e7b4276e61b36580555c042d93d8a91e4825798e31fc399e069614fea24d0e501bf752aaef9e96e90ceb712dbd647d81ddf6a39e3768893effc31cba2f93e2e3d5fec1858a9ea6aeccc2bb6640c580670d44d4212411c6dd31e5322479ad7ad6373e509c06486341f057e6a132a67f2e93d940844494a6eeefd93e7eaa888df57f7124be45056197c15638ca1143abc571f3fb571fb0c4cfbd9a3eb865cb6521732d3be8092d0d7733f220f57c573a00657b9fb8ffd5a0becfe555778cc559f25a63ab49e0e20d306f9aa8f7c2f4ee6b8f9c1f7c547cfad5dac112a7f04ed0d3ac6181fe9359def709b58086e3d58e124b47abe27b1f0d8cd8752f25c915ff99651239b57a6715aaeb0806f6a40fc8ca990f87bcfdb0650abbcd77d8ac54a0197942214bf8f6c0d288175bc4fead6030c605f408bfcc9927d9a3c45720b11ecf88f1e81bacacda89030d3597ec43811c27d80330bdcca07dd6f57f63b60b2125bef601f5fc24f7049e2a523196c81f40823a2587eb70d816610da9ac71c98c812b0290d21f0a36f6f47ceba81bad16207e6334d47ed3ccce97290ab1e64ec449d56a6ad872e964e0703514c62ab003c21f10e2b11782c26e1ec0fa5497a315fd2720140be7dea046ee9a443f70d46aebe70c4467e369b22ab2c0a3ea7486ca2e7b8c4b7bcf9d0531e030b0b0ffa11f09621c284e245798ff0d25593ff3050be7eacabe7b085db0791fc3804f343412203563cac123e151fc840a5f1e835e31e60993e8a9de546274f7ba78c3a197d4ac6999ad44a18c4dfd2d899153937e4b682bdb268205f73cbadfbf4890806b0a5a3dca2e478a423f0ef383d70246e307136779240dff7476b37ab746b45312a10bda5c3b6e67ea8265007dfbb146c8e45b19b6f5485e902e6b6cd18bd34083a23e4d4290e5ecafd404bd0b685ad332ffb03461f704723a919e508f459c61cb0044df018767668787662d188d12f64f694b45b9242b47de95525e5efb2509328876cf0043db7d0e683c3283020760f156ab553808dd2cf0866a683eb91163605619a5c2d9359229f326a3afd2b37af61d08d80871cfcc6297f1a2c0f93adf6d5c4b5aa65888bd32db15e15ad3dcdfb04f86c3feb76b225e091dd63089f46b785b71056483daff3b4eabc2f6bec64960b190bd874a97477bf85dd0e9d6b85f5c99ce3dcbcc66c3a7c8936894a200c41f9186f938aff0bcc68ecc92965d6dd472aa8bf4ac62c7a7c829e27d69878a9270cf130567e49254bb36f6ba8bc4c6f0e8ef80084590120137239db2d90301786be93dfb900089dde2c486f8acdd1ea1925294d641278bc2cd5c66248b7f2155ab87a6df4a00f12252e287bd84fe679a0e6d39e2bbef6dc178ee99c0531e3e8fd3c1ec614d4fcfde492922c8e0691e6de723bf120bb6bb86854c1e90a905ed5fb45dc73a70bfd8e8d67a44df7d1d17f1c086a0426b21dedd4e909e874f617fa789d5b0413fb70211e54b574444df843ddeac9b5f6b5bf5084befcf359f67702c6061b688edd3762d63305d5e4d2a78157bfc6515bec7706b2d3ab488a4e0c112afcabfe85f65f45cbcc756c0cd0e2125cc027b035357aca69b73999af2c2cf9b78297f795bba05533e716b3de6c16a0f881a6ffba6bbac3bb550a297f831d1562c93eecf308b13e325b0a1bfcf3892c7a302e3d45cde75fb3e30c8ba74e5866d7e0dc19aae8da56a3d2dc59c0fe487d71ca66cdeaffbbd901bd2fc5ec7ffe6f6a26e991beb46515d5d0bf68171d8f432e3e6aa11d68b23e23eee4b6ccbb388f1c09c92d3f5539c8a04b8c1a9ea3bdedac8f27dbe96d0a47284713c685848fd203a1f0f4c352362d8c80e982d53f36283f021935669793f372eb39c019834acc0a67aae3e6a7b0c419f130cca1947854cef0bd2620ab0dd35492e007b15207a4d80f6d59e72928cb7856edef70b8c535371043aafb2c168fbaffbfcff5fe2a9e4d6b31f15ce227e078b5c7648b435249e3df2dac5390dcc703d2be725b505a46180c0ae4c332abc4377ec08ce261dd89ff25c639aa9a98d165897216cab2edf7e0c1650694e2307c88b2116ce47cebe831964fdda5cd67db5d475df7091f318a15380171e9c9c0b0f5a76ccb3ffaa187ae807f0057e94151185a7b9e53d44bdaeee442b68f9ae69f966efc5b656cb4531dee94ecc4071ef6bb8d83d40c130187d879c4edaddb655458f6d68265f2b827b744b31e1293bbbe5445d3939ab259636cf015c13a6cf460f0bc93d3112a53c6458c4dd2c6f2d3601dc72639b453326374d081af72700e5207c6881ffffc541</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">您好, 这里需要密码.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>waffle常见正则表达式</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="http://promethus-code.gitee.io/2021/03/10/waffle%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">http://promethus-code.gitee.io/2021/03/10/waffle%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>X-man</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2021-03-10</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2021-03-10</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96/">中文汉化</a><a class="post-meta__tags" href="/tags/waffle/">waffle</a></div><div class="post_share"><div class="social-share" data-image="/img/xcw/find1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/03/10/%E6%96%87%E6%9C%AC%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/"><img class="prev-cover" src="/img/xcw/find1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">文本批量导入导出</div></div></a></div><div class="next-post pull-right"><a href="/2020/09/26/opencv/opencv-python/"><img class="next-cover" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=41264192,1215111278&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">opencv-python</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/04/02/waffle报错记录分析/" title="waffle报错记录分析"><img class="cover" src="/img/xcw/find1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-04-02</div><div class="title">waffle报错记录分析</div></div></a></div><div><a href="/2021/03/10/SiglusEngine_repack/" title="SiglusEngine打包code"><img class="cover" src="/img/xcw/find1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-10</div><div class="title">SiglusEngine打包code</div></div></a></div><div><a href="/2021/03/28/yu-ris记录/" title="yu-ris程序修改记录"><img class="cover" src="/img/xcw/find1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-28</div><div class="title">yu-ris程序修改记录</div></div></a></div><div><a href="/2021/03/10/文本批量导入导出/" title="文本批量导入导出"><img class="cover" src="/img/xcw/find1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-10</div><div class="title">文本批量导入导出</div></div></a></div><div><a href="/2021/03/25/正则表达式处理文本/" title="正则表达式处理文本"><img class="cover" src="/img/xcw/find1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-25</div><div class="title">正则表达式处理文本</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/xcw/header1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">X-man</div><div class="author-info__description">欢迎每一位的到来</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#waffle%E5%B8%B8%E8%A7%81%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">waffle常见正则表达式</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/04/02/waffle%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95%E5%88%86%E6%9E%90/" title="waffle报错记录分析"><img src="/img/xcw/find1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="waffle报错记录分析"/></a><div class="content"><a class="title" href="/2021/04/02/waffle%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95%E5%88%86%E6%9E%90/" title="waffle报错记录分析">waffle报错记录分析</a><time datetime="2021-04-02T01:22:05.000Z" title="发表于 2021-04-02 09:22:05">2021-04-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/28/%E9%9B%B6%E7%A2%8E%E7%82%B9/linux%E4%BD%BF%E7%94%A8/" title="linux使用记录"><img src="/img/xcw/find1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="linux使用记录"/></a><div class="content"><a class="title" href="/2021/03/28/%E9%9B%B6%E7%A2%8E%E7%82%B9/linux%E4%BD%BF%E7%94%A8/" title="linux使用记录">linux使用记录</a><time datetime="2021-03-28T03:10:34.000Z" title="发表于 2021-03-28 11:10:34">2021-03-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/28/yu-ris%E8%AE%B0%E5%BD%95/" title="yu-ris程序修改记录"><img src="/img/xcw/find1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="yu-ris程序修改记录"/></a><div class="content"><a class="title" href="/2021/03/28/yu-ris%E8%AE%B0%E5%BD%95/" title="yu-ris程序修改记录">yu-ris程序修改记录</a><time datetime="2021-03-28T01:44:05.000Z" title="发表于 2021-03-28 09:44:05">2021-03-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/25/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC/" title="正则表达式处理文本"><img src="/img/xcw/find1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="正则表达式处理文本"/></a><div class="content"><a class="title" href="/2021/03/25/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC/" title="正则表达式处理文本">正则表达式处理文本</a><time datetime="2021-03-25T01:44:05.000Z" title="发表于 2021-03-25 09:44:05">2021-03-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/19/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" title="神经网络激活函数python实现(代码预览)"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=13114550,2928413146&amp;fm=26&amp;gp=0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="神经网络激活函数python实现(代码预览)"/></a><div class="content"><a class="title" href="/2021/03/19/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" title="神经网络激活函数python实现(代码预览)">神经网络激活函数python实现(代码预览)</a><time datetime="2021-03-19T12:02:12.056Z" title="发表于 2021-03-19 20:02:12">2021-03-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By X-man</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script async data-pjax src="/js/randombg.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

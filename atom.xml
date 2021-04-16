@@ -6,11 +6,11 @@
   <link href="http://xcwnice.gitee.io/atom.xml" rel="self"/>
   
   <link href="http://xcwnice.gitee.io/"/>
-  <updated>2021-04-14T07:52:10.597Z</updated>
+  <updated>2021-04-15T07:36:49.449Z</updated>
   <id>http://xcwnice.gitee.io/</id>
   
   <author>
-    <name>X-man</name>
+    <name>xcw</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="http://xcwnice.gitee.io/2021/04/14/%E9%9B%B6%E7%A2%8E%E7%82%B9/youtube-dl/"/>
     <id>http://xcwnice.gitee.io/2021/04/14/%E9%9B%B6%E7%A2%8E%E7%82%B9/youtube-dl/</id>
     <published>2021-04-14T02:59:34.000Z</published>
-    <updated>2021-04-14T07:52:10.597Z</updated>
+    <updated>2021-04-15T07:36:49.449Z</updated>
     
     <content type="html"><![CDATA[<h1 id="youtube-dl脚本"><a href="#youtube-dl脚本" class="headerlink" title="youtube-dl脚本"></a>youtube-dl脚本</h1><div class="note warning flat"><p>此为懒人批处理code</p></div><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:<span class="built_in">start</span></span><br><span class="line"><span class="built_in">set</span> /p <span class="built_in">dir</span>=请输入保存路径：</span><br><span class="line"><span class="built_in">set</span> <span class="built_in">dir</span>=<span class="variable">%dir:/=\%</span></span><br><span class="line"><span class="built_in">pushd</span> <span class="variable">%dir%</span></span><br><span class="line"><span class="keyword">if</span> /i <span class="keyword">not</span> <span class="variable">%dir%</span>==<span class="variable">%cd%</span> <span class="keyword">goto</span> :<span class="built_in">start</span></span><br><span class="line"><span class="built_in">echo</span> 保存路径：<span class="variable">%cd%</span></span><br><span class="line">:download</span><br><span class="line"><span class="built_in">set</span> /p input=请输入视频链接：</span><br><span class="line"><span class="built_in">set</span> input=<span class="variable">%input:&amp;=^^^&amp;%</span></span><br><span class="line">youtube-dl -F <span class="variable">%input%</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">errorlevel</span> <span class="number">1</span> <span class="keyword">goto</span> :download</span><br><span class="line"><span class="built_in">set</span> /p code=请输入视频格式编号：</span><br><span class="line">youtube-dl -f <span class="variable">%code%</span> <span class="variable">%input%</span></span><br><span class="line"><span class="keyword">goto</span> :download</span><br></pre></td></tr></table></figure>]]></content>
     

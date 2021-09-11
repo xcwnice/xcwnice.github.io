@@ -396,6 +396,20 @@
   </url>
   
   <url>
+    <loc>http://xcwnice.github.io/tags/opencv/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xcwnice.github.io/tags/yolov3/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xcwnice.github.io/tags/jupyter-notebook/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -411,20 +425,6 @@
   
   <url>
     <loc>http://xcwnice.github.io/tags/win32/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xcwnice.github.io/tags/opencv/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xcwnice.github.io/tags/yolov3/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -473,7 +473,21 @@
   </url>
   
   <url>
+    <loc>http://xcwnice.github.io/tags/cocoapi/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xcwnice.github.io/tags/dos/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xcwnice.github.io/tags/linux/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -494,13 +508,6 @@
   </url>
   
   <url>
-    <loc>http://xcwnice.github.io/tags/linux/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://xcwnice.github.io/tags/%E9%9B%B6%E7%A2%8E%E7%82%B9/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -509,13 +516,6 @@
   
   <url>
     <loc>http://xcwnice.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xcwnice.github.io/tags/cocoapi/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -552,13 +552,6 @@
   </url>
   
   <url>
-    <loc>http://xcwnice.github.io/categories/EDA/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://xcwnice.github.io/categories/kotlin/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -566,7 +559,21 @@
   </url>
   
   <url>
+    <loc>http://xcwnice.github.io/categories/EDA/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xcwnice.github.io/categories/%E5%8A%A0%E5%AF%86%E7%9B%AE%E5%BD%95/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xcwnice.github.io/categories/opencv/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -581,13 +588,6 @@
   
   <url>
     <loc>http://xcwnice.github.io/categories/%E5%8A%A0%E5%AF%86%E7%9B%AE%E5%BD%95/%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xcwnice.github.io/categories/opencv/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -615,6 +615,13 @@
   </url>
   
   <url>
+    <loc>http://xcwnice.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2021-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xcwnice.github.io/categories/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -622,7 +629,7 @@
   </url>
   
   <url>
-    <loc>http://xcwnice.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://xcwnice.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -636,13 +643,6 @@
   </url>
   
   <url>
-    <loc>http://xcwnice.github.io/categories/%E9%9B%B6%E7%A2%8E%E7%82%B9/</loc>
-    <lastmod>2021-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://xcwnice.github.io/categories/linux/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -650,7 +650,7 @@
   </url>
   
   <url>
-    <loc>http://xcwnice.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</loc>
+    <loc>http://xcwnice.github.io/categories/%E9%9B%B6%E7%A2%8E%E7%82%B9/</loc>
     <lastmod>2021-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

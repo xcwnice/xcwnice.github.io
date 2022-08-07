@@ -6,7 +6,7 @@
   <link href="http://xcwnice.github.io/atom.xml" rel="self"/>
   
   <link href="http://xcwnice.github.io/"/>
-  <updated>2022-06-13T06:44:00.872Z</updated>
+  <updated>2022-08-07T08:14:24.839Z</updated>
   <id>http://xcwnice.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fastcopy命令行参数解释</title>
+    <link href="http://xcwnice.github.io/2022/08/07/%E9%9B%B6%E7%A2%8E%E7%82%B9/fastcopy%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%A7%A3%E9%87%8A/"/>
+    <id>http://xcwnice.github.io/2022/08/07/%E9%9B%B6%E7%A2%8E%E7%82%B9/fastcopy%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%A7%A3%E9%87%8A/</id>
+    <published>2022-08-07T01:31:34.000Z</published>
+    <updated>2022-08-07T08:14:24.839Z</updated>
+    
+    <content type="html"><![CDATA[<h1>fastcopy 命令行参数解释</h1><p>fastcopy可以在windows下使用，也可以在dos下运行命令</p><p>下面是fastcopy命令行方式:</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastcopy.exe [/参数] file1 file2 ... [/to=dest_dir]</span><br></pre></td></tr></table></figure><p>基本参数:</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/<span class="built_in">cmd</span>=(noexist_only|diff|update|sync|force_copy|<span class="built_in">move</span>|delete)</span><br><span class="line">#noexist_only 复制-如重名，则不复制 </span><br><span class="line">#diff 复制-如重名，则仅复制大小与时间不同的文件</span><br><span class="line">#update 复制-如重名，则复制较新的源文件 </span><br><span class="line">#sync 同步-如重名，则复制大小与时间不同的文件</span><br><span class="line">#force_copy 复制-覆盖重名文件 </span><br><span class="line">#<span class="built_in">move</span> 移动-覆盖重名文件并强行删除源文件 </span><br><span class="line">#delete 删除-强行删除指定的文件与目录</span><br></pre></td></tr></table></figure><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">/auto_close #拷贝结束后，自动关闭 </span><br><span class="line">/force_close #如果拷贝结束后，发生错误，也强行关闭 </span><br><span class="line">/open_window #显示Fastcopy窗口界面 </span><br><span class="line">/estimate #预测拷贝完成时间 </span><br><span class="line">/no_exec #对Fastcopy窗口界面设置参数，但是不执行 </span><br><span class="line">/no_confirm_del #当用/delete参数时，不显示确认界面 </span><br><span class="line">/error_stop #发生错误时中止动作（在/error_stop=FALSE抑制） </span><br><span class="line">/bufsize=N(MB) #用MB单位来指定缓冲器大小 </span><br><span class="line">/speed=(full|autoslow|<span class="number">9</span>-<span class="number">1</span>(<span class="number">90</span><span class="variable">%-10%</span>)|suspend) #速度限制 </span><br><span class="line">/log #输出记录文件(fastcopy.log) （在/log=FALSE抑制） </span><br><span class="line">/skip_empty_dir #启用过滤，不拷贝空文件夹（在/skip_empty_dir=FALSE抑制） </span><br><span class="line">/job=任务名称 #执行指定的任务 </span><br><span class="line">/force_start #在其他的FastCopy拷贝，并且正执行的时候，也立即执行（在/force_start=FALSE抑制） </span><br><span class="line">/disk_mode=(auto|same|diff) #指定自动/恒等性/其他HDD方式</span><br><span class="line">/include=“...” #指定Include过滤器 </span><br><span class="line">/exclude=“...“ #指定Exclude过滤器 </span><br><span class="line">/overwrite_del #在删除文件之前，删掉方式时，重新取名给重复&amp;，使复原无效（在/overwrite_del=FALSE抑制） </span><br><span class="line">/acl #拷贝存取支配清单(ACL)（只NTFS有效）（在/acl=FALSE抑制） </span><br><span class="line">/stream #拷贝副其次线流（只NTFS有效）（在/stream=FALSE抑制）</span><br><span class="line">/junction #复制junction·mount point(不是属下)junction·mount point自己(/junction=FALSE 拷贝属下) </span><br><span class="line">/symlink #用象征性连接(而不是本质)拷贝象征性连接其本身（在/symlink=FALSE拷贝本质）</span><br><span class="line">/to=dest_dir #目标磁盘</span><br></pre></td></tr></table></figure><p>如下例就是将永恒之塔写入到E盘，要注意目标盘后加\</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fastcopy.exe [/options] file1 file2 ... [/to=dest_dir]</span><br><span class="line">Please use space character(&#x27; &#x27;) as separator(<span class="keyword">not</span> semicolon).</span><br><span class="line"><span class="keyword">If</span> filename contains space character, please enclose with dobule quotation marks.</span><br></pre></td></tr></table></figure><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">c:\<span class="title">FastCopy</span>\<span class="title">FastCopy.exe</span> /<span class="title">cmd</span>=<span class="title">sync</span> /<span class="title">auto_close</span> /<span class="title">open_window</span> &quot;\\<span class="title">ztsv</span>-<span class="title">xs</span>\永恒之塔&quot; /<span class="title">to</span>=&quot;<span class="title">e</span>:\<span class="title">games</span>\&quot;</span></span><br></pre></td></tr></table></figure><p>强行删除桌面 [复件 技巧]文件夹(设置了不可读的一样干掉了)(里面的/log为记录过程文本可去掉)</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FastCopy.exe /<span class="built_in">cmd</span>=delete /no_confirm_del /error_stop=FALSE /auto_close /force_close /log &quot;C:\Documents and Settings\Administrator\桌面\复件&quot;</span><br></pre></td></tr></table></figure><p>登陆局域网上其它机器共享文件夹的批处理命令：</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> use * \\ipaddr\share &quot;password&quot; /user:&quot;username&quot; /persistent:yes</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;fastcopy 命令行参数解释&lt;/h1&gt;
+&lt;p&gt;fastcopy可以在windows下使用，也可以在dos下运行命令&lt;/p&gt;
+&lt;p&gt;下面是fastcopy命令行方式:&lt;/p&gt;
+&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl</summary>
+      
+    
+    
+    
+    <category term="dos" scheme="http://xcwnice.github.io/categories/dos/"/>
+    
+    
+    <category term="dos" scheme="http://xcwnice.github.io/tags/dos/"/>
+    
+  </entry>
   
   <entry>
     <title>树莓派基础配置</title>
@@ -138,9 +165,9 @@
     <link href="http://xcwnice.github.io/2022/02/24/%E9%9B%B6%E7%A2%8E%E7%82%B9/win10%20%E7%AB%AF%E5%8F%A3%E6%97%A0%E6%95%85%E8%A2%AB%E5%8D%A0%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://xcwnice.github.io/2022/02/24/%E9%9B%B6%E7%A2%8E%E7%82%B9/win10%20%E7%AB%AF%E5%8F%A3%E6%97%A0%E6%95%85%E8%A2%AB%E5%8D%A0%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/</id>
     <published>2022-02-24T05:02:00.000Z</published>
-    <updated>2022-03-14T03:14:24.354Z</updated>
+    <updated>2022-06-28T05:56:30.322Z</updated>
     
-    <content type="html"><![CDATA[<h1>win10 端口无故被占用的问题</h1><p>Win10经常会碰到端口被占用的情况，一般来说，用<code>netstat-aon|findstr 端口号</code>可以找到占用端口的对应进程，干掉它就好，</p><p>在开启了Hyper-V后，有时会出现端口被占用，但是绑定到这个端口时提示端口已被占用，这是因为有服务将这些端口设为保留端口，无法被应用使用<br>可以使用</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> stop winnat</span><br></pre></td></tr></table></figure><p>将服务关闭，就可以使用这些端口了</p><p>然后再开启这个服务</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> <span class="built_in">start</span> winnat</span><br></pre></td></tr></table></figure><p>也可以将你常用的端口排除在保留端口外</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh int ipv4 add excludedportrange protocol=tcp startport=<span class="number">50323</span> numberofports=<span class="number">1</span></span><br></pre></td></tr></table></figure><p>当然，最好还是让它占用的随机端口是我们不需要的部分</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netsh int ipv4 <span class="built_in">set</span> dynamicport tcp <span class="built_in">start</span>=<span class="number">11000</span> num=<span class="number">8999</span></span><br><span class="line">netsh int ipv4 <span class="built_in">set</span> dynamicport udp <span class="built_in">start</span>=<span class="number">11000</span> num=<span class="number">8999</span></span><br><span class="line">netsh int ipv6 <span class="built_in">set</span> dynamicport tcp <span class="built_in">start</span>=<span class="number">11000</span> num=<span class="number">8999</span></span><br><span class="line">netsh int ipv6 <span class="built_in">set</span> dynamicport udp <span class="built_in">start</span>=<span class="number">11000</span> num=<span class="number">8</span></span><br></pre></td></tr></table></figure><p>这是让它在11000-12000端口中挑选随机端口</p>]]></content>
+    <content type="html"><![CDATA[<h1>win10 端口无故被占用的问题</h1><p>Win10经常会碰到端口被占用的情况，一般来说，用<code>netstat-aon|findstr 端口号</code>可以找到占用端口的对应进程，干掉它就好，</p><p>在开启了Hyper-V后，有时会出现端口被占用，但是绑定到这个端口时提示端口已被占用，这是因为有服务将这些端口设为保留端口，无法被应用使用<br>可以使用</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> stop winnat</span><br></pre></td></tr></table></figure><p>将服务关闭，就可以使用这些端口了</p><p>然后再开启这个服务</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> <span class="built_in">start</span> winnat</span><br></pre></td></tr></table></figure><p>也可以将你常用的端口排除在保留端口外</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh int ipv4 add excludedportrange protocol=tcp startport=<span class="number">50323</span> numberofports=<span class="number">1</span></span><br></pre></td></tr></table></figure><p>当然，最好还是让它占用的随机端口是我们不需要的部分</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netsh int ipv4 <span class="built_in">set</span> dynamicport tcp <span class="built_in">start</span>=<span class="number">11000</span> num=<span class="number">8999</span></span><br><span class="line">netsh int ipv4 <span class="built_in">set</span> dynamicport udp <span class="built_in">start</span>=<span class="number">21000</span> num=<span class="number">8999</span></span><br><span class="line">netsh int ipv6 <span class="built_in">set</span> dynamicport tcp <span class="built_in">start</span>=<span class="number">21000</span> num=<span class="number">8999</span></span><br><span class="line">netsh int ipv6 <span class="built_in">set</span> dynamicport udp <span class="built_in">start</span>=<span class="number">21000</span> num=<span class="number">8</span></span><br></pre></td></tr></table></figure><p>这是让它在11000-12000端口中挑选随机端口</p>]]></content>
     
     
       
@@ -554,31 +581,6 @@
     
     
     <category term="dos" scheme="http://xcwnice.github.io/tags/dos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>waffle报错记录分析</title>
-    <link href="http://xcwnice.github.io/2021/04/02/gal%E6%B1%89%E5%8C%96%E8%AE%B0%E5%BD%95/waffle%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95%E5%88%86%E6%9E%90/"/>
-    <id>http://xcwnice.github.io/2021/04/02/gal%E6%B1%89%E5%8C%96%E8%AE%B0%E5%BD%95/waffle%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95%E5%88%86%E6%9E%90/</id>
-    <published>2021-04-02T01:22:05.000Z</published>
-    <updated>2021-03-31T12:31:47.026Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="5916b89ab288d6153f74ec79788955ed5233642284aadb1e5e79be97888cd190">03936f7d4a6f4d8cf2203a535bf2a98503c90495dcb368c08333383165239b87e983fb8da396c461ce464802fed86ec3a3d2cad738984299d04d07ecbe11f7071dd7794f493ca29208c9ced7c35fa96a7e95f91f532aa1da456246b036293c4a6d20a32ab669adc54a0f8c71fb4cee376930ab5d263fa925f2a56baef60667c7389e9f859d7cf403a1493c6b233acb5587c6d2e6f444b4b7201b6ee38855db2e5c4b551a0b1a75f882a8fbdc5f688d228805eaee860a6983ad8a8933c27b6a48a35be1077c57fd8ea2050511251dbba53a442879bbe6803f4da10e9ee0e30037b2d6415f12099a164f71c3862e59a8745cbc25fc154eb7ea4ae1a13b6d483053c5c2705abcf3b0fd3ee18825a1b9fa54f6076cc6eb5b8527f1f536c2bbd502ba</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">您好, 这里需要密码.</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">这里有东西被加密了，需要输入密码查看哦。</summary>
-    
-    
-    
-    <category term="加密目录" scheme="http://xcwnice.github.io/categories/%E5%8A%A0%E5%AF%86%E7%9B%AE%E5%BD%95/"/>
-    
-    <category term="中文汉化" scheme="http://xcwnice.github.io/categories/%E5%8A%A0%E5%AF%86%E7%9B%AE%E5%BD%95/%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96/"/>
-    
-    
-    <category term="中文汉化" scheme="http://xcwnice.github.io/tags/%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96/"/>
-    
-    <category term="waffle" scheme="http://xcwnice.github.io/tags/waffle/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="http://xcwnice.github.io/atom.xml" rel="self"/>
   
   <link href="http://xcwnice.github.io/"/>
-  <updated>2022-08-07T08:14:24.839Z</updated>
+  <updated>2022-09-25T08:07:54.474Z</updated>
   <id>http://xcwnice.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WSA联网问题</title>
+    <link href="http://xcwnice.github.io/2022/09/25/%E9%9B%B6%E7%A2%8E%E7%82%B9/WSA%E8%81%94%E7%BD%91%E9%97%AE%E9%A2%98/"/>
+    <id>http://xcwnice.github.io/2022/09/25/%E9%9B%B6%E7%A2%8E%E7%82%B9/WSA%E8%81%94%E7%BD%91%E9%97%AE%E9%A2%98/</id>
+    <published>2022-09-25T08:03:34.000Z</published>
+    <updated>2022-09-25T08:07:54.474Z</updated>
+    
+    <content type="html"><![CDATA[<h1>解决方法</h1><ul><li><p>玄学法</p><blockquote><ol><li><p>wsl网络在hyper-v管理器中设置为内部网络</p></li><li><p>在cmd中使用ipconfig命令查看是否有wsl网络，有的话试试wsa里的浏览器能否联网，不能就重启</p></li><li><p>查看不到wsl网络，先打开wsa再查看</p></li><li><p>一般查看的到wsl网络，并重启一次的话一般是能联上网络</p></li></ol></blockquote></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;解决方法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;玄学法&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;wsl网络在hyper-v管理器中设置为内部网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在cmd中使用ipconfig命令查看是否有wsl网络，有的话试试wsa</summary>
+      
+    
+    
+    
+    <category term="零碎点" scheme="http://xcwnice.github.io/categories/%E9%9B%B6%E7%A2%8E%E7%82%B9/"/>
+    
+    
+    <category term="WSA" scheme="http://xcwnice.github.io/tags/WSA/"/>
+    
+  </entry>
   
   <entry>
     <title>fastcopy命令行参数解释</title>
@@ -552,35 +586,6 @@
     <category term="python" scheme="http://xcwnice.github.io/tags/python/"/>
     
     <category term="中文汉化" scheme="http://xcwnice.github.io/tags/%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>dos常用指令</title>
-    <link href="http://xcwnice.github.io/2021/04/05/%E9%9B%B6%E7%A2%8E%E7%82%B9/dos%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
-    <id>http://xcwnice.github.io/2021/04/05/%E9%9B%B6%E7%A2%8E%E7%82%B9/dos%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
-    <published>2021-04-05T01:31:34.000Z</published>
-    <updated>2021-04-06T03:18:52.676Z</updated>
-    
-    <content type="html"><![CDATA[<h1>Dos常用指令</h1><div class="note info flat"><p>这里只是提供一些用法</p></div><h2 id></h2><h2 id="利用dos清除难以清除的文件夹">利用dos清除难以清除的文件夹</h2><blockquote><p>原理: 这是利用了UNC路径的一个特例。UNC路径就是符合 \servername\sharename 格式，其中 servername 是服务器名，sharename 是共享资源的名称。?是统配符，表示匹配0个或1个任意字符。使用UNC路径不会捡测路径中的保留字设备名称等，因此可以用这种方法来删除特殊文件或目录。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">echo 确定删除你所选中的文件？</span><br><span class="line">pause</span><br><span class="line">DEL &#x2F;F &#x2F;A \\?\%1</span><br><span class="line">RD &#x2F;S &#x2F;Q \\?\%1</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1&gt;Dos常用指令&lt;/h1&gt;
-&lt;div class=&quot;note info flat&quot;&gt;&lt;p&gt;这里只是提供一些用法&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id&gt;&lt;/h2&gt;
-&lt;h2 id=&quot;利用dos清除难以清除的文件夹&quot;&gt;利用dos清除难以清除的文件夹&lt;/h2&gt;
-&lt;blockquote</summary>
-      
-    
-    
-    
-    <category term="dos" scheme="http://xcwnice.github.io/categories/dos/"/>
-    
-    
-    <category term="dos" scheme="http://xcwnice.github.io/tags/dos/"/>
     
   </entry>
   
